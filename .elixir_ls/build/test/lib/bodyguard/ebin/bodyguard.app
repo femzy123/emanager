@@ -1,0 +1,13 @@
+{application,bodyguard,
+             [{applications,[kernel,stdlib,elixir,plug]},
+              {description,"Bodyguard is a simple, flexibile authorization library for Phoenix apps.\nIt imposes some naming conventions so that policy modules can be easily\nlocated and queried at runtime depending on the context of the authorization.\nIt was inspired by the behavior and conventions of Ruby's Pundit gem.\n"},
+              {modules,['Elixir.Bodyguard','Elixir.Bodyguard.Action',
+                        'Elixir.Bodyguard.NotAuthorizedError',
+                        'Elixir.Bodyguard.Plug',
+                        'Elixir.Bodyguard.Plug.Authorize',
+                        'Elixir.Bodyguard.Plug.BuildAction',
+                        'Elixir.Bodyguard.Policy','Elixir.Bodyguard.Schema',
+                        'Elixir.Bodyguard.Utilities',
+                        'Elixir.Plug.Exception.Bodyguard.NotAuthorizedError']},
+              {registered,[]},
+              {vsn,"0.2.1"}]}.
